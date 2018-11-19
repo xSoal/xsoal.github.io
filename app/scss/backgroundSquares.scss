@@ -1,0 +1,50 @@
+
+
+.backgrdound_squares {
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    animation-name: rotateSquares;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+.background_square {
+    background-color: transparent;
+    &__overflow {
+         /*position: absolute;*/
+         background-color: transparent;
+    }
+
+     position: absolute;
+     top: 30%;
+     left: 25%;
+
+    &__square-one {
+         width: 40%;
+         height: 25%;
+         background-color: #e74c3c;
+         transform: rotate(120deg);
+    }
+    &__square-two {
+         width: 45%;
+         height: 25%;
+         background-color: #3498db;
+         transform: rotate(15deg);
+    }
+    &__square-three {
+        width: 35%;
+        height: 35%;
+        background-color: gold;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotateSquares {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}

@@ -1,0 +1,41 @@
+
+
+.pagesCounter {
+    /*opacity: 0;*/
+    position: fixed;
+    /*padding: 5px 25px;*/
+    width: 70px;
+
+    left: 90%;
+    top: 90%;
+    font-family: Vivaldi , serif;
+    font-style: italic;
+
+    span {
+        position: relative;
+    }
+
+    &__pageNow {
+         font-size: 2em;
+         right: -5px;
+         bottom: 5px;
+    }
+
+
+    &__slash {
+         font-size: 2.4em;
+         top: 5px;
+    }
+
+
+    &__allPages {
+        top: 4px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .pagesCounter {
+        display: none;
+    }
+}

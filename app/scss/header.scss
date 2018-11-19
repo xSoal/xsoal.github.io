@@ -1,0 +1,88 @@
+
+.header {
+
+	position: absolute;
+
+	&__logo {
+		box-sizing: border-box;
+		position: relative;
+		/*margin: 15px;*/
+		
+		opacity: 0;
+
+		/*border: 1px solid;*/
+		width: 105px;
+		height: 35px;
+
+		top: 15px;
+		left: 15px;
+
+		border: 1px solid rgba(68, 68, 68, 0.47);
+		border-width: 0px;
+
+		transition: background-color 1s , border-width 1s;
+
+		background-color: white;
+   		border-radius: 4px;
+
+
+		span {
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			text-align: center;
+			line-height: 20px;
+			font-size: 17px;
+		    top: 0px;
+		    bottom: 0px;
+		    margin: auto 0;
+			line-height: 100%;
+			border-radius: 2px;
+			color: #555;
+		}
+
+
+		&-x {
+			left: 15px; 
+		}
+
+		&-s {
+			left: 28px;
+		}
+
+		&-o {
+			left: 48px;
+		}
+
+		&-a {
+			left: 62px;
+		}
+
+		&-l {
+			left: 75px;
+		}
+
+	}
+
+
+
+
+
+
+}
+
+
+
+.arrow-bottom {
+	position: absolute;
+	bottom: 35px;
+	left: 0px;
+	right: 0px;
+
+	max-width: 45px;
+	margin: 0 auto;
+	&__img {
+		width: 100%;
+		max-width: 100%;
+	}
+}

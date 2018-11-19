@@ -1,0 +1,64 @@
+
+
+
+.pre_loader {
+	position: fixed;
+	/*cursor: none;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 1;
+	/*z-index: -16;*/
+	z-index: 1;
+	
+	&-s {
+		
+		text-align: center;
+		font-size: 35px;
+		color: white;
+		transition: 1s;
+		left: 50%;
+		top: 50%;
+		
+		transition: left 1.5s, top 1.5s, font-size 1s, color 1.5s, transform 1s;
+
+		z-index: 7;
+		position: absolute;
+		transform: rotate(90deg);
+	}
+}
+
+
+.wall {
+	&__container {
+		position: relative;
+		 max-width: 100%;
+		 height: 100%;
+		 overflow-x: hidden;
+		 z-index: 1;
+	 }
+	 
+	 &__overflow {
+		  position: absolute;
+		  z-index: -15;
+		  bottom: 0%;
+		  /*transform: rotate(45deg);*/
+		  width: 100%;
+		  height: 0%;
+
+			&-white {
+				 background-color: white;
+				 border-bottom: 0px solid black;
+				 border-bottom-width: 340px;
+			 }
+			&-red {
+				 background-color: red;
+			 }
+			&-black {
+				 background-color: black;
+			 }
+	  }
+}
+

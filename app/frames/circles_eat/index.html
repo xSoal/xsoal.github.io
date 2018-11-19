@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js.js" defer></script>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+
+	#frags {
+		position: fixed;
+		top: 5px;
+		right: 5px;
+		padding: 15px;
+		background-color: #fff9f9e7;
+	}
+
+
+	#pause {
+		display: none;
+
+	}
+
+	#win {
+		display: none;
+
+	}
+
+	.popup {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    min-height: 100%;
+	    top: 0px;
+	    left: 0px;
+	    background-color: #fff9f987;
+	    text-align: center;
+	    padding-top: 15%;
+
+	}
+
+
+	@media (max-width: 1024px){
+		body {
+			font-size: 14px;
+		}
+	}
+
+
+
+</style>
+
+
+
+<body>
+
+
+<canvas id="canvas"></canvas>
+
+
+<dir id="pause">
+	<div class="popup">
+		<div style="color: #444; font-size: 4em;">You was eaten</div>
+		<br>
+		<div style="color: #444; font-size: 1em;"> You was eaten by ball with radius: <dir style="color: red;" id="killer"></dir></div>
+		<br>
+		<div style="color: #444; font-size: 1em;"> Your radius: <dir style="color: red;" id="you"></dir></div>
+		<br>
+		<dir style="color: #444; font-size: 2em;">Press mouse to restart</dir>
+
+	</div>
+
+</dir>
+
+
+<dir id="win">
+	<div class="popup">
+		<div style="color: #444; font-size: 2em;">Time was comming...</div>
+		<br>
+		<div style="color: #444; font-size: 4em;">... no need to eat the ALL WORLD</div>
+		<br>
+		<div id="img">
+			<img src="https://i.ytimg.com/vi/NAYm06yZNhw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLADXLrr8zyhI7BJY5p2qQCQ0BgXHA">
+		</div>
+		<br>
+		<dir style="color: #444; font-size: 2em;">Press mouse to restart</dir>
+	</div>
+
+</dir>
+
+
+
+<div id="frags">0</div>
+
+
+
+
+</body>
+</html>
