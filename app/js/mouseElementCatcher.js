@@ -115,6 +115,13 @@ function animatedMoveElement(el, to, distance) {
     
 }
 
+// function cachedAnimation(el){
+//     if( !el.classList.contains('isCached') ){
+
+//     }
+// }
+
+
 function animatedMoveElementToStart(el, to){
     isAnimationBlocked = true;
     anime({

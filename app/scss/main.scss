@@ -198,16 +198,19 @@ body {
 	width: 25px;
 	height: 25px;
 	left: calc(50% - 12.5px);
-	top: calc(5% - 12.5px);
+	top: calc(4% - 12.5px);
 	color: black;
 	// transition: .5s;
 	display: flex;
     justify-content: center;
-    align-items: center;
-																				&__overflow {
+	align-items: center;
+	padding: 5px;
+
+	&__overflow {
 		position: relative;
 		width: 100%;
 		height: 100%;
+		display: flex;
 
 		&:before {
 			position: absolute;
@@ -223,18 +226,41 @@ body {
 			
 		}
 	}
+
+	&__line {
+		margin: 1px;
+		transition: .4s;
+	}
+
+	&.isCached &__line {
+		position: relative;
+	}
+
+	&.isCached &__line-1  {
+		transform: rotate(45deg);
+		left: 2px;
+		
+	}
+
+	&.isCached &__line-2 {
+		transform: rotate(-45deg);
+		left: -3px;
+		top: -1px;
+		
+	}
 }
 
 .testButton.isCached {
 	background-color: black;
 	color: white;
 	border-radius: 50px;
-	&__overflow {
-		&:before {
-			width: 100%;
-			height: 100%;
-		}
-	}
+
+	// &__overflow {
+	// 	&:before {
+	// 		width: 100%;
+	// 		height: 100%;
+	// 	}
+	// }
 }
 
 
