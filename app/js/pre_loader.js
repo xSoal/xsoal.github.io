@@ -8,8 +8,8 @@ let preLoader = (callback) => {
 
 	let speed = 14;
 	let iterations = 0;
-	// let maxIterations = 55;
-    let maxIterations = 5;
+	let maxIterations = 55;
+    // let maxIterations = 5;
 	let deg = 0;
 
 	let animation = setInterval(()=>{
@@ -58,7 +58,6 @@ let preLoader = (callback) => {
                     $('.pre_loader').css('display' , 'none');
 				}
 			});
-
 
 
 			$('.header__logo').animate({
